@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            max-width: 1000px;
+            display: flex;
+            background: pink;
+        }
+
+        .wrap > div {
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        .wrap > .box1 {
+            /* 기본값은 0 숫자가 클 수록 뒤 -> 반응형일 때 주로 사용 */
+            order: 3;
+        }
+
+        .wrap > .box3 {
+            order: 4;
+        }
+
+        .flex-grow {
+            max-width: 600px;
+            border: 5px solid black;
+            display: flex;
+        }
+
+        .flex-grow > div {
+            width: 100px;
+        }
+
+        .flex-grow > .box1 {
+            background: green;
+            flex-grow: 1;
+        }
+
+        .flex-grow > .box2 {
+            background: skyblue;
+        }
+
+        .flex-grow > .box3 {
+            background: orange;
+            flex-grow: 1;
+        }
+
+        .flex-grow > .box4 {
+            background: #ddd;
+            flex-grow: 2;
+        }
+
+        .flex-shrink {
+            max-width: 600px;
+            border: 5px solid black;
+            display: flex;
+        }
+
+        .flex-shrink > div {
+            width: 250px;
+        }
+
+        .flex-shrink > .box1 {
+            background: green;
+            flex-shrink: 1;
+        }
+
+        .flex-shrink > .box2 {
+            background: skyblue;
+            flex-shrink: 0;
+        }
+
+        .flex-shrink > .box3 {
+            background: orange;
+            flex-shrink: 1;
+        }
+
+        .flex-shrink > .box4 {
+            background: #ddd;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+
+    <!-- 빈 간격 배분 -->
+    <div class="flex-grow">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+
+    <!-- 간격 부족할 때 -->
+    <div class="flex-shrink">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>
