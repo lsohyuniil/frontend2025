@@ -1,0 +1,38 @@
+/* 변수 */
+:root {
+    --main-text-color : #222;
+}
+
+/* 공통사항 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+img, video {
+    vertical-align: top; 
+}
+
+.blind {
+    position: absolute;
+    top: -99999em;
+}
+
+body {
+    font-family: "", sans-serif;
+    /* em은 부모 요소 기준으로, rem은 body를 기준으로 */
+    /* font-size: 16px; 브라우저의 글자 기본 크기 */
+    color: var(--main-text-color);
+    /* 글자 간견, 글자 굵기 적용 */
+}
