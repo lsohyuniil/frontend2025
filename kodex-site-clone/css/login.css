@@ -334,6 +334,10 @@ footer .footer-bottom {
     justify-content: space-between;
 }
 
+footer .footer-bottom address {
+    font-style: normal;
+}
+
 footer .footer-bottom p {
     color: #9c9b9b;
     font-size: x-small;
