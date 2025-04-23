@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "subway font";
+            src: url(./font/Subway-Footlong.woff);
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: "subway font";
+            src: url(./font/Subway-SixInch.woff);
+            font-weight: 100;
+        }
+
+        /* nth-child : 부모의 입장에서 자식을 바라봄, nth-of-type : 현재 사용하고자하는 태그에서 바라봄*/
+        p:nth-of-type(1) {
+            color: red;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        p:nth-of-type(2) {
+            font-family: "Dongle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .font-face {
+            font-family: "subway font";
+        }
+    </style>
+</head>
+<body>
+    <!-- 구글 Noto Sans KR -->
+    <h1>폰트 설정하기</h1>
+    <p>폰트를 연결하는 방법 - 링크를 걸어준다.</p>
+    <p>내 컴퓨터에 폰트를 선언한다.</p>
+
+    <!-- 로컬에 있는 폰트 사용 -> @font-face로 선언해서 사용 -->
+    <h2 class="font-face">Subway</h2>
+    <h2>Subway</h2>
+</body>
+</html>
