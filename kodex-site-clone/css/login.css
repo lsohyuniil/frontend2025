@@ -118,7 +118,7 @@ header {
     display: block;
     width: 15px;
     height: 15px;
-    background: url(/images/36.svg) no-repeat center;
+    background: url(../images/36.svg) no-repeat center;
     background-size: 15px;
     transform: rotate(-90deg);
 }
@@ -132,7 +132,7 @@ header {
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/images/31.svg) no-repeat center;
+    background: url(../images/31.svg) no-repeat center;
     background-size: 30px;
 }
 
@@ -141,7 +141,7 @@ header {
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/images/15.svg) no-repeat center;
+    background: url(../images/15.svg) no-repeat center;
     background-size: 30px;
 }
 
@@ -150,7 +150,7 @@ header {
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/images/11.svg) no-repeat center;
+    background: url(../images/11.svg) no-repeat center;
     background-size: 40px;
 }
 
@@ -221,7 +221,7 @@ header {
 .lightning-icon {
     width: 8px;
     height: 8px;
-    background: url(/images/lighting.svg) no-repeat center;
+    background: url(../images/lighting.svg) no-repeat center;
     background-size: 10px;
 }
 .login-wrap > .login-container > .login-btns {
