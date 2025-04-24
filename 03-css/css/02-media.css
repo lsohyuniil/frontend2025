@@ -1,0 +1,74 @@
+
+/* pc */
+/* pcTitle 보이기 - ipad, mibile title 감추기 */
+.pcTitle {
+    
+}
+
+.ipadTitle, .mobileTitle {
+    display: none;
+}
+
+.main {
+    max-width: 1600px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        height: 200px;
+    }
+
+    .box1, .box3 {
+        width: 25%;
+        background: orange;
+    }
+
+    .box2 {
+        width: 40%;
+        background: green;
+    }
+}
+
+/* ipad */
+@media screen and (max-width:1280px) {
+    .pcTitle {
+        display: none;
+    }
+
+    .ipadTitle {
+        display: block;
+    }
+
+    .main {
+        /* 넘쳐나는 자식들 줄 변경 */  
+        flex-wrap: wrap;
+
+        .box1, .box3 {
+            order: 1;
+            width: 47%;
+        }
+
+        .box2 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mmobileTitle {
+        display: block;
+    }
+    .ipadTitle {
+        display: none;
+    }
+    .main {
+        .box1, .box2, .box3 {
+            width: 100%;
+        }
+        .box1, .box3 {
+            order: 0;
+        }
+    }
+}
