@@ -17,13 +17,15 @@ html {
 body {
     line-height: 3rem;
     color: var(--ibk-text-color);
+    font-size: 1.6rem;
 }
 
 .content-center {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255,0,0,0.2)
+    padding: 0 1.6rem;
+    background-color: rgba(255, 0, 0, 0.2)
 }
 
 /* header */
@@ -228,7 +230,6 @@ header {
                         display: flex;
                         
                         .prev-btn {
-
                         }
 
                         .playStop-btn {
@@ -291,3 +292,146 @@ header {
 }
 
 /* footer */
+footer {
+    .footer-top {
+        border-top: 1px solid var(--ibk-main-bg-color);
+        padding: 2rem 0;
+
+        .footer-check {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                a {
+                    display: block;
+                    background: var(--ibk-main-color);
+                    color: #fff;
+                    padding: 0 1.6rem;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }
+
+    .footer-middle {
+        background: var(--ibk-main-bg-color);
+        line-height: 7rem;
+
+        .footer-menu {
+            display: flex;
+            gap: 3.5rem;
+            
+            li {
+                position: relative;
+                font-size: 1.4rem;
+
+                a {
+                    
+                }
+            }
+
+            li::after {
+                content: '';
+                display: block;
+                width: 4px;
+                height: 4px;
+                background:var(--ibk-text-color);
+                position: absolute;
+                right: -2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+            }
+
+            li:last-child::after {
+                display: none;
+            }
+
+            li:first-child {
+                color: var(--ibk-main-color);
+                font-weight: 600;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 5rem 0;
+        
+        > div > div {
+            display: flex;
+            justify-content: space-between;
+            
+            address {
+                /* font-size: 1.5rem; */
+            }
+            
+            .smart-wrap {
+                display: flex;
+                gap: 3rem;
+
+                .smart-qr {
+                    width: 10rem;
+                    border-radius: 1rem;
+                    overflow: hidden;
+                    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.1);
+                }
+
+                .smart {
+                    a {
+                        display: flex;
+                        font-size: 1.8rem;
+                        color: var(--ibk-main-color);
+                        font-weight: 800;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 0.7rem;
+
+                        i {
+                            display: block;
+                            width: 2rem;
+                            height: 2rem;
+                            background-image: url(../images/icon_line_b.svg);
+                            background-position: 70% -18rem;
+                            background-size: 1100%;
+                        }
+                    }
+                    small {
+                        font-size: 1.2rem;
+                        color: var(--ibk-secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .footer-bottom {
+        > div > div {
+            display: block;
+
+            .smart-wrap {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* 본문 제목 24px
+        footer 11 ~ 12px 
+    */
+    html {
+        font-size: 8px;
+    }
+}
+
+
