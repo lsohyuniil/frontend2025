@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 선언적 함수
+        function hi1(uName){
+            document.write(`${uName} 안녕<br>`);
+        }
+        hi1('선언적 함수');
+
+        // 2. 익명적 함수
+        let hi2 = function(uName, uAge){
+            document.write(`${uName} 안녕 너는 ${uAge}살<br>`);
+        }
+        hi2('익명적 함수', 5);
+        
+        // 3. 화살표 함수
+        // let hi3 = (uName) => document.write(`${uName} 안녕<br>`);
+        // 매개변수 하나인 경우 괄호 생략 가능
+        let hi3 = uName => document.write(`${uName} 안녕<br>`);
+        hi3('화살표 함수');
+
+        let hi4 = (uName, uAge) => document.write(`${uName} 안녕 너는 ${uAge}살<br>`);
+        hi4('화살표 함수', 6);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 선언적 함수
+        function hi1(){
+            document.write('하이~ 일반 함수<br>');
+        }
+        hi1();
+
+        // 2. 익명적 함수
+        let hi2 = function(){
+            document.write('하이~ 익명적 함수<br>');
+        }
+        hi2();
+        
+        // 3. 화살표 함수
+        // let hi3 = () => {
+        //     document.write('하이~ 화살표 함수<br>');
+        // }
+        // 한 줄일 땐 중괄호 생략 가능
+        let hi3 = () => document.write('하이~ 화살표 함수<br>');
+        hi3();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
