@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. Date 객체
+        let today = new Date();
+        console.log(today);
+        
+        // 년도 추출
+        // 동작관련 메서드 뒤에 () 붙음 / 속성
+        let year = today.getFullYear();
+        console.log(year);
+
+        // 월 추출 (0부터 시작)
+        let month = today.getMonth();
+        console.log(month + 1);
+
+        // 일 추출
+        let theDay = today.getDate();
+        console.log(theDay);
+
+        // 요일 추출
+        // 0: 일요일 ~ 6: 토요일
+        let day = today.getDay();
+        console.log(day);
+
+        // getHours() : 0 ~ 23
+        // getMinutes()
+        // getSeconds()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
