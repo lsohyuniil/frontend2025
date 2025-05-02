@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            // img 태그 생성하기
+            let myImg = document.createElement('img');
+
+            // scr alt 속성 만들기 - 2가지
+
+            // 방법1
+            // myImg.src = "./images/0522_파바스토리_썸네일_5.jpg";
+            // myImg.alt = "파리바게트";
+
+            // 방법2
+            // setAttribute('속성', '값');
+            myImg.setAttribute('src', './images/0522_파바스토리_썸네일_5.jpg');
+            myImg.setAttribute('alt', '파리바게트');
+
+            document.body.appendChild(myImg);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
