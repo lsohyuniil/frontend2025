@@ -1,0 +1,20 @@
+header {
+  position: fixed;
+  width: 100%;
+  background: pink;
+}
+@media screen and (max-width: 767px) {
+  header {
+    position: static;
+  }
+}
+
+main section {
+  background: green;
+  height: 500px;
+}
+@media screen and (max-width: 767px) {
+  main section {
+    background: pink;
+  }
+}/*# sourceMappingURL=media.css.map */
