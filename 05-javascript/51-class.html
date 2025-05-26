@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 동물 클래스
+      // 상태 변수 : 동물의 종류, 속도
+      // 메서드
+      // - run: 동물 누구는 속도가 얼마이다~ 출력
+      // - stop: 동물 누구가 멈췄습니다. 출력
+      class Animal {
+        // 상태 변수
+        constructor(kind, speed) {
+          this.kind = kind;
+          this.speed = 0;
+        }
+
+        // 메서드
+        run(speed) {
+          this.speed = speed;
+          console.log(`${this.kind}는 속도가 ${this.speed}이다~`);
+        }
+
+        stop() {
+          console.log(`${this.kind}가 멈췄습니다.`);
+        }
+      }
+
+      let dog = new Animal("강아지");
+      dog.run(20);
+      dog.stop();
+
+      class Birds extends Animal {
+        hide() {
+            console.log(`${this.li}`)@@
+        }
+      }
+    </script>
+  </body>
+</html>

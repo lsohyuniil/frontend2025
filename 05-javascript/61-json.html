@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // fetch는 비동기적으로 http에 data 요청할 때 사용 -> 반환되는 값은 promise 객체
+      fetch("data.json")
+        // 서버에서 응답을 받을 때 실행
+        .then((response) => {
+          // 응답 개체 전체를 출력해서 어떤 정보가 있는지 확인
+          // 상태, 정상, body, headers등의 전체 정보가 들어있음
+          console.log(response);
+          // 응답받은 본문을 json 객체로 파싱해주기
+          return response.json();
+        })
+        // 응답받은 데이터를 처리할 때
+        .then((data) => {
+          console.log(data);
+          console.log(data.name, data.age);
+        })
+        // 에러
+        .catch((error) => {});
+    </script>
+  </body>
+</html>
