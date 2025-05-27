@@ -20,8 +20,12 @@ export const TodoProvider = ({ children }) => {
 
   // todos 값이 변경되면 localStorage에 저장
   useEffect(() => {
-    // 문자열 형태이기 떄문에 저장할 객체를 문자열로 바꿔줘야 함
-    localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+    if (todos.length > 0) {
+      // 문자열 형태이기 떄문에 저장할 객체를 문자열로 바꿔줘야 함
+      localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+    } else {
+      localStorage.removeItem(TODOS_KEY);
+    }
   }, [todos]);
 
   // 새로운 할 일 추가
@@ -53,7 +57,6 @@ export const TodoProvider = ({ children }) => {
   // 전체 삭제
   const removeAll = () => {
     setTodos([]);
-    localStorage.removeItem(TODOS_KEY);
   };
 
   return (
