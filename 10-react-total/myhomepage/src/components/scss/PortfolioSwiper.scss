@@ -1,3 +1,5 @@
+@use "../../App.scss" as g;
+
 .portSwiper {
   .swiper-slide {
     display: flex;
@@ -5,6 +7,7 @@
 
     img {
       width: 100%;
+      border-radius: g.$둥글기;
     }
 
     .text-box {
@@ -20,8 +23,9 @@
 
       .btn-wrap {
         ul {
-          display: flex;
-          gap: 10px;
+          // display: flex;
+          // gap: 10px;
+          @include g.myFlex(10px, start);
 
           li {
             a {

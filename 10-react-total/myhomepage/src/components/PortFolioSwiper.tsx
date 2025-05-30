@@ -68,10 +68,10 @@ const PortFolioSwiper = () => {
                 <span>{item.skill}</span>
                 <ul>
                   <li>
-                    <a href={item.gitUrl}></a>
+                    <a href={item.gitUrl}>gitUrl</a>
                   </li>
                   <li>
-                    <a href={item.webUrl}></a>
+                    <a href={item.webUrl}>webUrl</a>
                   </li>
                 </ul>
               </div>

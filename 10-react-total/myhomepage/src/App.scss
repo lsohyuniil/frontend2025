@@ -17,9 +17,9 @@ li {
   list-style: none;
 }
 
-@mixin myFlex($gap: 0) {
+@mixin myFlex($gap: 0, $jc: space-between) {
   display: flex;
-  justify-content: space-between;
+  justify-content: $jc;
   align-items: center;
   gap: $gap;
 }
