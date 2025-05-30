@@ -20,7 +20,7 @@ const PortfolioList: Portfolio[] = [
     id: 0,
     title: "제목1",
     des: "사이트 리뉴얼함",
-    skill: "React+Typescript",
+    skill: "#React #Typescript",
     webUrl: "http://naver.com",
     gitUrl: "",
   },
@@ -28,7 +28,7 @@ const PortfolioList: Portfolio[] = [
     id: 1,
     title: "제목2",
     des: "사이트 리뉴얼함",
-    skill: "React",
+    skill: "#React",
     webUrl: "http://kakao.com",
     gitUrl: "",
   },
@@ -36,7 +36,7 @@ const PortfolioList: Portfolio[] = [
     id: 2,
     title: "제목3",
     des: "사이트 리뉴얼함",
-    skill: "Typescript",
+    skill: "#Typescript",
     webUrl: "http://google.com",
     gitUrl: "",
   },
@@ -68,10 +68,10 @@ const PortFolioSwiper = () => {
                 <span>{item.skill}</span>
                 <ul>
                   <li>
-                    <a href={item.gitUrl}>gitUrl</a>
+                    <a href={item.gitUrl}>git</a>
                   </li>
                   <li>
-                    <a href={item.webUrl}>webUrl</a>
+                    <a href={item.webUrl}>web</a>
                   </li>
                 </ul>
               </div>

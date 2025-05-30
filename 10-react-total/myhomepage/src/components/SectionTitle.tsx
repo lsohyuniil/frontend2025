@@ -1,4 +1,3 @@
-import React from "react";
 import "./scss/Title.scss";
 
 const SectionTitle = ({
@@ -10,9 +9,10 @@ const SectionTitle = ({
 }) => {
   return (
     <div>
-      <div className="titleBox"></div>
-      <h2 className="title">{title}</h2>
-      <p className="subTitle">{subTitle}</p>
+      <div className="titleBox">
+        <h2 className="title">{title}</h2>
+        <p className="subTitle">{subTitle}</p>
+      </div>
     </div>
   );
 };

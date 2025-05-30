@@ -4,13 +4,15 @@ import PortFolioSwiper from "../components/PortFolioSwiper";
 
 const Portfolio = () => {
   return (
-    <div className="content-inner">
-      <SectionTitle
-        title="Portfolio"
-        subTitle="저의 포트폴리오를 소개합니다."
-      />
-      <div>
-        <PortFolioSwiper />
+    <div className="main portfolio">
+      <div className="content-inner">
+        <SectionTitle
+          title="Portfolio"
+          subTitle="저의 포트폴리오를 소개합니다."
+        />
+        <div>
+          <PortFolioSwiper />
+        </div>
       </div>
     </div>
   );
