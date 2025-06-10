@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../App.scss","../scss/product.scss"],"names":[],"mappings":"AAYA;EACE;EACA;EACA;;;AAGF;EACE;;AChBA;EACE;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;EDnBJ;EACA,iBAFiB;EAGjB,aAHiD;;ACuB7C;EACE,OD5BF;;AC+BA;ED1BJ;EACA,iBAFiB;EAGjB,aAHiD;EAIjD,KCwB8B;;AAG1B;EACE;;AAGF;EACE","file":"product.css"}
