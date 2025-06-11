@@ -8,7 +8,7 @@ const Man = () => {
       <div>
         <img src="./images/man-sub-banner.jpg" alt="" />
       </div>
-      <div className="container-inner">
+      <div className="content-inner">
         <Title title="남자" />
         <CategoryPage categoryName="men's clothing" />
       </div>

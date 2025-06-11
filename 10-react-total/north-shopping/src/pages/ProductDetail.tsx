@@ -23,7 +23,7 @@ const ProductDetail = () => {
 
   return (
     <div className="container">
-      <div className="container-inner">
+      <div className="content-inner">
         <Title title="상품상세페이지" />
         <div className="product-detail">
           <div className="img-box">

@@ -8,7 +8,7 @@ const Electric = () => {
       <div>
         <img src="./images/electronics-sub-banner.jpg" alt="" />
       </div>
-      <div className="container-inner">
+      <div className="content-inner">
         <Title title="전자제품" />
         <CategoryPage categoryName="electronics" />
       </div>

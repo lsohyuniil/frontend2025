@@ -15,7 +15,7 @@ const menus: MenuItem[] = [
   { key: "electric", label: "전자제품" },
 ];
 const Header = () => {
-  const { cartCount } = useCartStore();
+  const { cartCount, currentUser } = useCartStore();
 
   return (
     <header>
@@ -38,18 +38,38 @@ const Header = () => {
         </div>
         <div className="header-right">
           <ul>
-            <li>
-              <Link to={"/login"}>
-                <img src="./images/loginPassword.png" alt="로그인" />
-                <p>LOGIN</p>
-              </Link>
-            </li>
-            <li>
-              <Link to={"/signup"}>
-                <img src="./images/loginMember.png" alt="회원가입" />
-                <p>MEMBER</p>
-              </Link>
-            </li>
+            {currentUser ? (
+              <>
+                <li>
+                  <Link to={"/login"}>
+                    <img src="./images/loginPassword.png" alt="로그아웃" />
+                    <p>LOGOUT</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/signup"}>
+                    <img src="./images/loginMember.png" alt="회원가입" />
+                    <p>000</p>
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to={"/login"}>
+                    <img src="./images/loginPassword.png" alt="로그인" />
+                    <p>LOGIN</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/signup"}>
+                    <img src="./images/loginMember.png" alt="회원가입" />
+                    <p>MEMBER</p>
+                  </Link>
+                </li>
+              </>
+            )}
+
             <li>
               <Link to={"/cart"}>
                 <img src="./images/cart.png" alt="장바구니" />

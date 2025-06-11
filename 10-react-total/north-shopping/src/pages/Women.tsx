@@ -8,7 +8,7 @@ const Women = () => {
       <div>
         <img src="./images/women-sub-banner.jpg" alt="" />
       </div>
-      <div className="container-inner">
+      <div className="content-inner">
         <Title title="여자" />
         <CategoryPage categoryName="women's clothing" />
       </div>
