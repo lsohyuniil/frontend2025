@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Title from "../components/Title";
 import { useCartStore } from "../store/useStore";
+import "./scss/form.scss";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const { login } = useCartStore();
   const [form, setForm] = useState({
     email: "",
@@ -22,7 +25,7 @@ const Login = () => {
       password: form.password,
     };
 
-    login(user);
+    login(user, navigate);
   };
 
   return (

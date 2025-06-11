@@ -42,4 +42,5 @@ export interface CartStore {
 
   memberUser: (user: User, navigate?: (path: string) => void) => void;
   login: (user: LoginUser, navigate?: (path: string) => void) => void;
+  logout: () => void;
 }

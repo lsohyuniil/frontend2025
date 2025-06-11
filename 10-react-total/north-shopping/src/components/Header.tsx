@@ -15,7 +15,11 @@ const menus: MenuItem[] = [
   { key: "electric", label: "전자제품" },
 ];
 const Header = () => {
-  const { cartCount, currentUser } = useCartStore();
+  const { cartCount, currentUser, logout } = useCartStore();
+
+  const username = currentUser?.includes("@")
+    ? currentUser.split("@")[0]
+    : currentUser;
 
   return (
     <header>
@@ -41,15 +45,15 @@ const Header = () => {
             {currentUser ? (
               <>
                 <li>
-                  <Link to={"/login"}>
+                  <Link to={"/"} onClick={logout}>
                     <img src="./images/loginPassword.png" alt="로그아웃" />
                     <p>LOGOUT</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/signup"}>
+                  <Link to={"/member"}>
                     <img src="./images/loginMember.png" alt="회원가입" />
-                    <p>000</p>
+                    <p>{username}</p>
                   </Link>
                 </li>
               </>

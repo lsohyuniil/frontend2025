@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   sendEmailVerification,
   signInWithEmailAndPassword,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig";
 
@@ -105,6 +106,8 @@ export const useCartStore = create<CartStore>((set, get) => ({
 
       set({ currentUser: userCredential.user.email });
       alert("로그인 되었습니다.");
+
+      if (navigate) navigate("/member");
     } catch (error: any) {
       console.log(error);
       alert("로그인 실패" + error.message);
@@ -112,4 +115,9 @@ export const useCartStore = create<CartStore>((set, get) => ({
   },
 
   // 로그아웃
+  logout: async () => {
+    await signOut(auth);
+    set({ currentUser: null });
+    alert("로그아웃 되었습니다.");
+  },
 }));
