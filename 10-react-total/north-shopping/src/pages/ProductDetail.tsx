@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Title from "../components/Title";
 import { useParams } from "react-router-dom";
-import { Product } from "../types/ProductType";
+import { cartProduct, Product } from "../types/ProductType";
 import axios from "axios";
 import "./scss/productDetail.scss";
 import { useCartStore } from "../store/useStore";
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const [product, setProduct] = useState<Product | null>(null);
+  const [product, setProduct] = useState<cartProduct | null>(null);
   const { addCart } = useCartStore();
 
   useEffect(() => {

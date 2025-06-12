@@ -11,6 +11,10 @@ export interface Product {
   };
 }
 
+export interface cartProduct extends Product {
+  quantity: number;
+}
+
 export interface User {
   email: string;
   username: string;
@@ -28,17 +32,20 @@ export interface LoginUser {
 }
 
 export interface CartStore {
-  items: Product[];
-  cartItems: Product[];
+  items: cartProduct[];
+  cartItems: cartProduct[];
   cartCount: number;
   totalPrice: number;
   currentUser: string | null;
 
   fetchItems: () => void;
-  getItemCategory: (category: string) => Product[];
+  getItemCategory: (category: string) => cartProduct[];
 
-  addCart: (product: Product) => void;
+  addCart: (product: cartProduct) => void;
   removeCart: (id: number) => void;
+
+  increaseQuantity: (id: number) => void;
+  descreaseQuantity: (id: number) => void;
 
   memberUser: (user: User, navigate?: (path: string) => void) => void;
   login: (user: LoginUser, navigate?: (path: string) => void) => void;

@@ -3,7 +3,7 @@ import { Product } from "../types/ProductType";
 import "./scss/product.scss";
 
 const ProductCard = ({ sendItem }: { sendItem: Product }) => {
-  const salePrice = sendItem.price * 0.7;
+  const salePrice = (sendItem.price * 0.7).toFixed(2);
 
   return (
     <div>
