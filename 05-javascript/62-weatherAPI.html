@@ -9,12 +9,18 @@
       .weather-wrap {
         max-width: 480px;
         width: 90%;
-        background-color: dodgerblue;
-        outline-offset: #fff;
+        background: dodgerblue;
+        color: #fff;
         text-align: center;
         padding: 40px;
         margin: 100px auto;
         border-radius: 20px;
+      }
+      .temp {
+        font-size: 70px;
+      }
+      .place {
+        font-size: 30px;
       }
     </style>
     <script defer src="./js/62-weatherAPI.js"></script>
@@ -24,7 +30,7 @@
       <div class="weather">
         <p class="icon"><img src="" alt="" /></p>
         <p><span class="temp"></span></p>
-        <p><span class="description"></span></p>
+        <p class="description"></p>
         <p><span class="place"></span></p>
       </div>
     </div>

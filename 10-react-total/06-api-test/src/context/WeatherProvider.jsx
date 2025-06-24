@@ -27,7 +27,7 @@ const WeatherProvider = ({ children }) => {
       try {
         const response = await axios.get(
           "https://api.openweathermap.org/data/2.5/weather",
-          { params: { q: city, appid: API_KEY, units: "metric", lang: "Kr" } }
+          { params: { q: city, appid: API_KEY, units: "metric", lang: "kr" } }
         );
 
         setWeatherData(response.data);
